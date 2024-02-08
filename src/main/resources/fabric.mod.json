@@ -9,15 +9,15 @@
   ],
   "contact": {
     "homepage": "https://modrinth.com/mod/not-enough-gamerules",
-    "sources": "https://github.com/Max094Reikeb/NotEnoughGamerules",
-    "issues": "https://github.com/Max094Reikeb/NotEnoughGamerules/issues"
+    "sources": "https://github.com/MModding/NotEnoughGamerules",
+    "issues": "https://github.com/MModding/NotEnoughGamerules/issues"
   },
-  "license": "All-Rights-Reserved",
+  "license": "LGPL-3.0",
   "icon": "assets/not_enough_gamerules/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.reikeb.notenoughgamerules.NotEnoughGamerules"
+      "com.mmodding.notenoughgamerules.NotEnoughGamerules"
     ]
   },
   "mixins": [
