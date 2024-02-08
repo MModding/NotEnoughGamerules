@@ -1,3 +1,5 @@
+[![MModding](https://raw.githubusercontent.com/MModding/mmodding.github.io/main/assets/mmodding_dark_banner.png)](https://discord.gg/2Sr83HJpD3)
+
 # NotEnoughGamerules #
 
 NotEnoughGamerules is a mod that adds a lot of new Gamerules in the game for you to play with.
@@ -46,7 +48,7 @@ NotEnoughGamerules is a mod that adds a lot of new Gamerules in the game for you
 [INTEGER] `villagerConversion` - defines the percentage of chance a villager has to turn into a Zombie Villager when killed by a Zombie<br />
 
 ## Contributing
-This mod is no longer updated. Feel free however to check the new Quilt version.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-All Rights Reserved.
+[LGPL-3.0](https://opensource.org/licenses/LGPL-3.0)
