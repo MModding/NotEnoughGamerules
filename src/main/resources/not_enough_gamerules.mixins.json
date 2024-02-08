@@ -1,0 +1,44 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.reikeb.notenoughgamerules.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "ChatMixin",
+    "EnderDragonFightMixin",
+    "ServerWorldMixin",
+    "StatusEffectMixin",
+    "blocks.AbstractBlockStateMixin",
+    "blocks.CoralBlockBlockMixin",
+    "blocks.CoralBlockMixin",
+    "blocks.CoralFanMixin",
+    "blocks.CoralWallFanMixin",
+    "blocks.IceBlockMixin",
+    "blocks.OxidizableBlockMixin",
+    "blocks.PistonMixin",
+    "blocks.SnowBlockMixin",
+    "entities.AnimalMateGoalMixin",
+    "entities.AnimalMixin",
+    "entities.EntityMixin",
+    "entities.FoxBreadMixin",
+    "entities.HoglinMixin",
+    "entities.LivingEntityMixin",
+    "entities.MobEntityMixin",
+    "entities.PiglinMixin",
+    "entities.PigMixin",
+    "entities.TntEntityMixin",
+    "entities.TntMinecartEntityMixin",
+    "entities.VillagerMixin",
+    "entities.ZombieMixin",
+    "entities.ZombieVillagerMixin",
+    "player.ClientPlayerMixin",
+    "player.OtherClientPlayerEntityMixin",
+    "player.PlayerMixin",
+    "player.ServerPlayerMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
