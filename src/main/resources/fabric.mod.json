@@ -25,8 +25,8 @@
   ],
   "accessWidener" : "not_enough_gamerules.accesswidener",
   "depends": {
-    "fabricloader": ">=0.14.21",
+    "fabricloader": ">=0.15.6",
     "fabric": "*",
-    "minecraft": "1.20.1"
+    "minecraft": "1.20.2"
   }
 }
