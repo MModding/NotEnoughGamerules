@@ -1,8 +1,8 @@
 package com.mmodding.notenoughgamerules.mixin;
 
+import com.mmodding.notenoughgamerules.Gamerules;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffect;
-import com.mmodding.notenoughgamerules.Gamerules;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;

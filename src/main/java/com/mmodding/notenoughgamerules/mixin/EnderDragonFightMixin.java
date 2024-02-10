@@ -1,8 +1,8 @@
 package com.mmodding.notenoughgamerules.mixin;
 
+import com.mmodding.notenoughgamerules.Gamerules;
 import net.minecraft.entity.boss.dragon.EnderDragonFight;
 import net.minecraft.server.world.ServerWorld;
-import com.mmodding.notenoughgamerules.Gamerules;
 import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;

@@ -1,5 +1,9 @@
 package com.mmodding.notenoughgamerules.mixin.player;
 
+import com.mmodding.notenoughgamerules.Gamerules;
+import com.mmodding.notenoughgamerules.NEGDamageTypes;
+import com.mmodding.notenoughgamerules.NotEnoughGamerules;
+import com.mmodding.notenoughgamerules.mixin.entities.LivingEntityMixin;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.HungerManager;
@@ -7,10 +11,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import net.minecraft.world.GameRules;
-import com.mmodding.notenoughgamerules.NEGDamageTypes;
-import com.mmodding.notenoughgamerules.Gamerules;
-import com.mmodding.notenoughgamerules.NotEnoughGamerules;
-import com.mmodding.notenoughgamerules.mixin.entities.LivingEntityMixin;
 import org.objectweb.asm.Opcodes;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;

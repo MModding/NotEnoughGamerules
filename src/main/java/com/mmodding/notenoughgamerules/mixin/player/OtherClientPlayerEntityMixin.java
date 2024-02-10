@@ -1,10 +1,10 @@
 package com.mmodding.notenoughgamerules.mixin.player;
 
+import com.mmodding.notenoughgamerules.NotEnoughGamerules;
+import com.mmodding.notenoughgamerules.mixin.entities.LivingEntityMixin;
 import net.minecraft.client.network.OtherClientPlayerEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.damage.DamageSource;
-import com.mmodding.notenoughgamerules.NotEnoughGamerules;
-import com.mmodding.notenoughgamerules.mixin.entities.LivingEntityMixin;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

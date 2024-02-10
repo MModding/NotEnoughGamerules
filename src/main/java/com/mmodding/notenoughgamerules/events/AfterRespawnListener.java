@@ -1,9 +1,9 @@
 package com.mmodding.notenoughgamerules.events;
 
+import com.mmodding.notenoughgamerules.Gamerules;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.server.network.ServerPlayerEntity;
-import com.mmodding.notenoughgamerules.Gamerules;
 
 public class AfterRespawnListener implements ServerPlayerEvents.AfterRespawn {
 

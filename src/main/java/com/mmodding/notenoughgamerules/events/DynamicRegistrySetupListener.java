@@ -1,9 +1,9 @@
 package com.mmodding.notenoughgamerules.events;
 
+import com.mmodding.notenoughgamerules.NEGDamageTypes;
 import net.fabricmc.fabric.api.event.registry.DynamicRegistrySetupCallback;
 import net.fabricmc.fabric.api.event.registry.DynamicRegistryView;
 import net.minecraft.registry.RegistryKeys;
-import com.mmodding.notenoughgamerules.NEGDamageTypes;
 
 public class DynamicRegistrySetupListener implements DynamicRegistrySetupCallback {
 

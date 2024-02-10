@@ -1,5 +1,8 @@
 package com.mmodding.notenoughgamerules;
 
+import com.mmodding.notenoughgamerules.events.AfterRespawnListener;
+import com.mmodding.notenoughgamerules.events.DynamicRegistrySetupListener;
+import com.mmodding.notenoughgamerules.events.PlayerSleepsListener;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.entity.event.v1.EntitySleepEvents;
 import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
@@ -12,9 +15,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.registry.tag.DamageTypeTags;
 import net.minecraft.util.Identifier;
 import net.minecraft.world.GameRules;
-import com.mmodding.notenoughgamerules.events.AfterRespawnListener;
-import com.mmodding.notenoughgamerules.events.DynamicRegistrySetupListener;
-import com.mmodding.notenoughgamerules.events.PlayerSleepsListener;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 public class NotEnoughGamerules implements ModInitializer {
