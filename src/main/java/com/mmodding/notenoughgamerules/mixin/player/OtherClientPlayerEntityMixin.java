@@ -13,10 +13,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(OtherClientPlayerEntity.class)
 public abstract class OtherClientPlayerEntityMixin extends LivingEntityMixin {
 
-    @Inject(method = "damage", at = @At("HEAD"), cancellable = true)
-    private void damage(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
-        Entity entity = this.getWorld().getEntityById(this.getId());
-        assert entity != null;
-        NotEnoughGamerules.damageGamerule(entity, source, cir);
-    }
+	@Inject(method = "damage", at = @At("HEAD"), cancellable = true)
+	private void damage(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
+		Entity entity = this.getWorld().getEntityById(this.getId());
+		assert entity != null;
+		NotEnoughGamerules.damageGamerule(entity, source, cir);
+	}
 }

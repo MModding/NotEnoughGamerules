@@ -9,5 +9,7 @@ import org.spongepowered.asm.mixin.Shadow;
 @Mixin(AnimalMateGoal.class)
 public class AnimalMateGoalMixin {
 
-    @Shadow @Final protected AnimalEntity animal;
+	@Shadow
+	@Final
+	protected AnimalEntity animal;
 }

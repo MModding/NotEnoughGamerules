@@ -17,14 +17,15 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(AbstractBlock.AbstractBlockState.class)
 public class AbstractBlockStateMixin {
-    @Inject(method = "onEntityCollision", at = @At("HEAD"), cancellable = true)
-    private void onEntityCollision(World world, BlockPos pos, Entity entity, CallbackInfo ci) {
-        if (!world.getGameRules().getBoolean(Gamerules.CAN_ENTITY_INTERACT_WITH_WORLD)) ci.cancel();
-    }
 
-    @Inject(method = "onUse", at = @At("HEAD"), cancellable = true)
+	@Inject(method = "onEntityCollision", at = @At("HEAD"), cancellable = true)
+    private void onEntityCollision(World world, BlockPos pos, Entity entity, CallbackInfo ci) {
+		if (!world.getGameRules().getBoolean(Gamerules.CAN_ENTITY_INTERACT_WITH_WORLD)) ci.cancel();
+	}
+
+	@Inject(method = "onUse", at = @At("HEAD"), cancellable = true)
     private void onUse(World world, PlayerEntity player, Hand hand, BlockHitResult hit, CallbackInfoReturnable<ActionResult> cir) {
-        if (!world.getGameRules().getBoolean(Gamerules.CAN_ENTITY_INTERACT_WITH_BLOCK))
-            cir.setReturnValue(ActionResult.PASS);
-    }
+		if (!world.getGameRules().getBoolean(Gamerules.CAN_ENTITY_INTERACT_WITH_BLOCK))
+			cir.setReturnValue(ActionResult.PASS);
+	}
 }

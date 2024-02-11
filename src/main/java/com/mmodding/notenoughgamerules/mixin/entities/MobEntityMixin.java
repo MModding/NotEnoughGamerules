@@ -6,9 +6,10 @@ import org.spongepowered.asm.mixin.Shadow;
 
 @Mixin(MobEntity.class)
 public abstract class MobEntityMixin extends EntityMixin {
-    @Shadow
-    protected void mobTick() {}
 
-    @Shadow
-    public void tick() {}
+	@Shadow
+	protected void mobTick() {}
+
+	@Shadow
+	public void tick() {}
 }

@@ -13,8 +13,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(CoralBlockBlock.class)
 public class CoralBlockBlockMixin {
+
     @Inject(method = "scheduledTick", at = @At("HEAD"), cancellable = true)
     private void scheduledTick(BlockState state, ServerWorld world, BlockPos pos, Random random, CallbackInfo ci) {
-        if (!world.getGameRules().getBoolean(Gamerules.DO_CORAL_NEED_WATER)) ci.cancel();
-    }
+		if (!world.getGameRules().getBoolean(Gamerules.DO_CORAL_NEED_WATER)) ci.cancel();
+	}
 }
