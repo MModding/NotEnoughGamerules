@@ -7,7 +7,7 @@
     "ChatMixin",
     "EnderDragonFightMixin",
     "ServerWorldMixin",
-    "StatusEffectMixin",
+    "PoisonStatusEffectMixin",
     "blocks.AbstractBlockStateMixin",
     "blocks.CoralBlockBlockMixin",
     "blocks.CoralBlockMixin",

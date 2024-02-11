@@ -13,8 +13,9 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(PistonBlock.class)
 public class PistonMixin {
-    @Inject(method = "shouldExtend", at = @At("HEAD"), cancellable = true)
-    private void shouldExtend(RedstoneView view, BlockPos pos, Direction pistonFace, CallbackInfoReturnable<Boolean> cir) {
-        if (view instanceof World world && world.getGameRules().getBoolean(Gamerules.DISABLE_PISTONS)) cir.setReturnValue(false);
-    }
+
+	@Inject(method = "shouldExtend", at = @At("HEAD"), cancellable = true)
+	private void shouldExtend(RedstoneView view, BlockPos pos, Direction pistonFace, CallbackInfoReturnable<Boolean> cir) {
+		if (view instanceof World world && world.getGameRules().getBoolean(Gamerules.DISABLE_PISTONS)) cir.setReturnValue(false);
+	}
 }
